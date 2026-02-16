@@ -1,0 +1,13 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Allow anyone to read and write to Tickets collection
+    match /Tickets/{document=**} {
+      allow read, write: if true;
+    }
+    // Allow anyone to read and write to Users collection
+    match /Users/{document=**} {
+      allow read, write: if true;
+    }
+  }
+}

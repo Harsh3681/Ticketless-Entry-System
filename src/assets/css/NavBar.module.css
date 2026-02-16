@@ -1,0 +1,156 @@
+/* You can add global styles to this file, and also import other style files */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-right: 3vw;
+    width: 100vw;
+    height: 10vh;
+    background-color: #232323;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+.title {
+    background-color: #FE5768;
+    height: 10vh;
+    max-width: 20vw;
+    display: flex;
+    align-items: center;
+    transform: skew(-20deg);
+    padding: 0 3vw;
+    text-shadow: 2px 1px whitesmoke;
+}
+
+.title:hover {
+    cursor: pointer;
+}
+ul {
+    width: 60vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ul li {
+    list-style: none;
+    align-items: center;
+    height: 10vh;
+    transform: skew(-20deg);
+}
+
+ul li:hover {
+    background: gray;
+}
+
+ul li:hover a {
+    color: white;
+}
+li a {
+    text-decoration: none;
+    height: 10vh;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    color: #E8A9C8;
+    font-size: larger;
+    font-weight: 700;
+}
+
+a.active {
+    /* transform: skew(-20deg); */
+    background: #FE5768;
+    color: white;
+}
+
+.hidden {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: space-between;
+    width: 30vw;
+}
+
+.hamburger {
+    width: 30px;
+    height: 30px;
+    opacity: 0;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.lines {
+    background-color: white;
+    width: 25px;
+    border-radius: 20px 0;
+    height: 4px;
+    padding: auto;
+    margin: 2px auto;
+}
+@media (max-width:650px){
+    nav {
+        flex-direction: column;
+    }
+    .hidden {
+        width: 100vw;
+        height: 10vh;
+        justify-content: space-between;
+        /* border-bottom: 1px solid white; */
+    }
+    .hamburger {
+        opacity: 1;
+        margin: auto 4vw;
+    }
+    ul {
+        opacity: 0;
+    }
+    nav.active ul {
+        transition: all 2s ease-in-out; 
+        opacity: 1;
+        z-index: 100;
+        margin: 0;
+        background-color: rgb(35, 35, 35);
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+    }
+
+    li a {
+        justify-content: center;
+        text-decoration: underline;
+        width: 80vw;
+    }
+    ul li:hover {
+        background: none;
+    }
+    a.active {
+        background: none;
+        color: #FE5768;
+    }
+}
+
+@media (max-width:550px){
+    .title {
+        min-width: 25vw;
+        justify-content: center;
+        font-size: x-large;
+    }
+    
+}
+@media (max-width:450px){
+    .title {
+        min-width: 35vw;
+        justify-content: center;
+        font-size: x-large;
+    }
+}
+@media (max-width:350px){
+    .title {
+        min-width: 40vw;
+        justify-content: center;
+        font-size: x-large;
+    }
+}
