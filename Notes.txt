@@ -1,3 +1,23 @@
+
+Successfully deployed to Firebase! 🎉 Link 👇👇👇
+
+https://ticketless-8c153.web.app
+
+
+-------------------------------------------------------
+
+🚀 Safe Deployment Workflow (Professional Way)
+
+Whenever you update something: 👇👇👇
+
+npm run build
+firebase deploy
+
+
+That’s it.
+
+--------------------------------------------------------
+
 firebase console 👇👇👇
 
 https://console.firebase.google.com/u/4/project/ticketless-8c153/firestore/databases/-default-/security/rules
@@ -32,3 +52,15 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
+
+--------------------------------------------------------
+
+Regarding QR code generation 👇👇👇
+
+Add SHA256 signature to QR (anti-tamper)
+
+Add expiry validation
+
+Add admin-only scanner route protection
+
+Add analytics dashboard
