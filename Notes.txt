@@ -3,6 +3,13 @@ Successfully deployed to Firebase! 🎉 Link 👇👇👇
 
 https://ticketless-8c153.web.app
 
+------------------------------------------------------
+
+After every update, follow these steps: 👇👇👇
+
+git add .
+git commit -m "Update feature"
+git push
 
 -------------------------------------------------------
 
