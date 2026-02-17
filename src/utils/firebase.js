@@ -7,13 +7,13 @@ import { getAnalytics } from "firebase/analytics";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: process.env.REACT_APP_apiKey,
-  authDomain: process.env.REACT_APP_authDomain,
-  projectId: process.env.REACT_APP_projectId,
-  storageBucket: process.env.REACT_APP_storageBucket,
-  messagingSenderId: process.env.REACT_APP_messagingSenderId,
-  appId: process.env.REACT_APP_appId,
-  measurementId: process.env.REACT_APP_measurementId
+  apiKey: "AIzaSyCHwpyI560k_zYNQyVTHxWsLwS9glSpH_U",
+  authDomain: "ticketless-8c153.firebaseapp.com",
+  projectId: "ticketless-8c153",
+  storageBucket: "ticketless-8c153.firebasestorage.app",
+  messagingSenderId: "358089424800",
+  appId: "1:358089424800:web:a4e5a75e60996890cdaec5",
+  measurementId: "G-TE5NCHET50"
 };
 
 // Initialize Firebase
